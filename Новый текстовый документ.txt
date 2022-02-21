@@ -1,0 +1,310 @@
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~
+$ git clone https://github.com/aigul1402/json.git
+Cloning into 'json'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~
+$ cd GitHub/
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub
+$ ls
+group_27/  linux_terminal/  txt/
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub
+$ cd json
+bash: cd: json: No such file or directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub
+$ cd ..
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~
+$ mv json/ GitHub/
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~
+$ cd GitHub/
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub
+$ ls
+group_27/  json/  linux_terminal/  txt/
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub
+$ cd json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ ls
+README.md
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim new.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git add new.json
+warning: LF will be replaced by CRLF in new.json.
+The file will have its original line endings in your working directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.json
+
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit -m "add new.json"
+[main 953f362] add new.json
+ 1 file changed, 2 insertions(+)
+ create mode 100644 new.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aigul1402/json.git
+   2039528..953f362  main -> main
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim new.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git add .
+warning: LF will be replaced by CRLF in new.json.
+The file will have its original line endings in your working directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit -am "change new.json"
+[main cabd107] change new.json
+ 1 file changed, 6 insertions(+)
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aigul1402/json.git
+   953f362..cabd107  main -> main
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim preferences.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim sklls.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ cat preferences.json
+{
+        "favorite movie":"Почему он?",
+        "favourite TV series":"Теория большого взрыва",
+        "favorite food":"жаренная картошка",
+        "favorite time of the year":"зима",
+        "the side I want to visit":"Амстердам"
+}
+
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim  sklls.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        preferences.json
+        sklls.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git add .
+warning: LF will be replaced by CRLF in preferences.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in sklls.json.
+The file will have its original line endings in your working directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit -m "change 2 files"
+[main 0ba6284] change 2 files
+ 2 files changed, 12 insertions(+)
+ create mode 100644 preferences.json
+ create mode 100644 sklls.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 706 bytes | 706.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aigul1402/json.git
+   cabd107..0ba6284  main -> main
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim bug report.json
+2 files to edit
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ cat bug report.json
+Bug #1
+cat: report.json: No such file or directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim report.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bug
+        report.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim bug
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim report.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git -rm bug
+unknown option: -rm
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bug
+        report.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git rm bug
+fatal: pathspec 'bug' did not match any files
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git rm -f bug
+fatal: pathspec 'bug' did not match any files
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git add report.json
+warning: LF will be replaced by CRLF in report.json.
+The file will have its original line endings in your working directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   report.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bug
+
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit -m
+error: switch `m' requires a value
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git push
+Everything up-to-date
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit "add reort.json"
+error: pathspec 'add reort.json' did not match any file(s) known to git
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit "add report.json"
+error: pathspec 'add report.json' did not match any file(s) known to git
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   report.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bug
+
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git push
+Everything up-to-date
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ vim report.json
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git add report.json
+warning: LF will be replaced by CRLF in report.json.
+The file will have its original line endings in your working directory
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$ git commit "add report.json"
+error: pathspec 'add report.json' did not match any file(s) known to git
+
+Пользователь@DESKTOP-7069A0U MINGW64 ~/GitHub/json (main)
+$
